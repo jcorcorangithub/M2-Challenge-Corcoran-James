@@ -16,7 +16,6 @@ public class MathSolutionController {
         if((input.getOperand1() == null || input.getOperand2() == null)){
             throw new IllegalArgumentException("you must supply a number for both operands");
         }
-        //Error: 422, still need to check for a not number
         return new MathSolution(input.getOperand1(), input.getOperand2(), "add", input.getOperand1()+input.getOperand2());
     }
 
